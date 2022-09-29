@@ -8,8 +8,10 @@ const morgan = require("morgan");
 
 const connectDB = require("./utils/db");
 
+//init app
 const app = express();
 
+//import routes
 const userRoutes = require("./routes/user.routes");
 
 app.use(express.urlencoded({ extended: true }));
@@ -23,6 +25,8 @@ app.use(
 app.use(cors());
 
 connectDB();
+//passport
+require("./config/passport")(app);
 
 console.log("process.env.NODE_ENV ", process.env.NODE_ENV);
 if (process.env.NODE_ENV === "production") {
