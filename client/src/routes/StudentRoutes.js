@@ -6,22 +6,20 @@ import Loadable from 'ui-component/Loadable';
 
 // dashboard routing
 
-// utilities routing
-
 // sample page routing
 const SamplePage = Loadable(lazy(() => import('views/sample-page')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-        {
-            path: '/sample',
-            element: <SamplePage />
-        }
-    ]
+  path: '/',
+  element: <MainLayout />,
+  children: [
+    {
+      path: '/student/dashboard',
+      element: <SamplePage />
+    }
+  ]
 };
 // const MainRoutes = {
 //     path: '/',

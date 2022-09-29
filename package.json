@@ -4,7 +4,8 @@
   "description": "MERN Booking System",
   "main": "server/server.js",
   "scripts": {
-    "dev:server": "npm run server --prefix server"
+    "dev:server": "npm run server --prefix server",
+    "dev:client": "npm run start --prefix client"
   },
   "author": "Thierry B."
 }
