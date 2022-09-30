@@ -39,7 +39,7 @@ import AddHomeIcon from '@mui/icons-material/AddHome';
 import AddHomeWorkIcon from '@mui/icons-material/AddHomeWork';
 //TODO::Import Tab
 
-const Dashboard = () => {
+const Profile = () => {
   const handleDateChange = (e) => {
     console.log(e);
   };
@@ -542,4 +542,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Profile;

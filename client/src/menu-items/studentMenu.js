@@ -4,7 +4,7 @@ import {
   IconUserCircle,
   IconLogout,
   IconCalendarEvent,
-  IconAlertTriangle,
+  IconSettings,
   IconSubscript,
   IconHelp,
   IconScript
@@ -79,7 +79,7 @@ const studentMenuItems = {
           title: 'Alert Settings',
           type: 'item',
           url: '/student/settings',
-          icon: IconAlertTriangle,
+          icon: IconSettings,
           breadcrumbs: false
         }
       ]

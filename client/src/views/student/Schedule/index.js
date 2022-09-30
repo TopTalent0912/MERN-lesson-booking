@@ -118,7 +118,7 @@ const upcomingClasses = [
   }
 ];
 
-const Dashboard = () => {
+const Schedule = () => {
   return (
     <Grid container spacing={2}>
       <PageTitle title="My Schedule" icon={IconCalendarEvent} />
@@ -147,4 +147,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Schedule;
