@@ -22,6 +22,24 @@ export default function componentStyleOverrides(theme) {
         }
       }
     },
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          '&::before': {
+            display: 'none'
+          },
+          '&:first-of-type': {
+            borderRadius: `${theme?.customization?.borderRadius}px`
+          },
+          '&:last-of-type': {
+            borderRadius: `${theme?.customization?.borderRadius}px`
+          }
+        },
+        rounded: {
+          borderRadius: `${theme?.customization?.borderRadius}px`
+        }
+      }
+    },
     MuiCardHeader: {
       styleOverrides: {
         root: {
