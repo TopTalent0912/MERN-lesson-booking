@@ -9,6 +9,9 @@ const StudentDashboard = Loadable(lazy(() => import('views/student/Dashbord')));
 const StudentProfile = Loadable(lazy(() => import('views/student/Profile')));
 const StudentSchedule = Loadable(lazy(() => import('views/student/Schedule')));
 const StudentBooking = Loadable(lazy(() => import('views/student/Booking')));
+const StudentTransactions = Loadable(
+  lazy(() => import('views/student/Transactions'))
+);
 const StudentAlertSetting = Loadable(
   lazy(() => import('views/student/AlertSettings'))
 );
@@ -39,6 +42,10 @@ const StudentRoutes = {
     {
       path: '/student/settings',
       element: <StudentAlertSetting />
+    },
+    {
+      path: '/student/transaction',
+      element: <StudentTransactions />
     }
   ]
 };

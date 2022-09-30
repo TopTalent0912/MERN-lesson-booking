@@ -5,10 +5,10 @@ import {
   IconLogout,
   IconCalendarEvent,
   IconSettings,
-  IconSubscript,
   IconHelp,
   IconScript
 } from '@tabler/icons';
+import PaymentsIcon from '@mui/icons-material/PaymentsTwoTone';
 
 // ==============================|| MENU ITEMS ||============================== //
 
@@ -93,7 +93,7 @@ const studentMenuItems = {
           title: 'Subscriptions & Transactions',
           type: 'item',
           url: '/student/transaction',
-          icon: IconSubscript,
+          icon: PaymentsIcon,
           breadcrumbs: false
         }
       ]
