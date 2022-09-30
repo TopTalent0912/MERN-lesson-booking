@@ -1,5 +1,13 @@
 //icon
-import { IconDashboard, IconUserCircle, IconLogout, IconCalendarEvent, IconAlertTriangle, IconSubscript, IconHelp } from '@tabler/icons';
+import {
+  IconDashboard,
+  IconUserCircle,
+  IconLogout,
+  IconCalendarEvent,
+  IconAlertTriangle,
+  IconSubscript,
+  IconHelp
+} from '@tabler/icons';
 
 // ==============================|| MENU ITEMS ||============================== //
 
