@@ -6,17 +6,22 @@ import Loadable from 'ui-component/Loadable';
 
 // dashboard routing
 const StudentDashboard = Loadable(lazy(() => import('views/student/Dashbord')));
+const StudentProfile = Loadable(lazy(() => import('views/student/Profile')));
 // const SamplePage = Loadable(lazy(() => import('views/sample-page')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
-const MainRoutes = {
-  path: '/',
+const StudentRoutes = {
+  path: '/student',
   element: <MainLayout />,
   children: [
     {
       path: '/student/dashboard',
       element: <StudentDashboard />
+    },
+    {
+      path: '/student/profile',
+      element: <StudentProfile />
     }
   ]
 };
@@ -89,4 +94,4 @@ const MainRoutes = {
 //     ]
 // };
 
-export default MainRoutes;
+export default StudentRoutes;

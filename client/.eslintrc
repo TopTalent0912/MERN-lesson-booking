@@ -44,17 +44,6 @@
       {
         "ignoreRestSiblings": false
       }
-    ],
-    "prettier/prettier": [
-      2,
-      {
-        "bracketSpacing": true,
-        "singleQuote": true,
-        "trailingComma": "none",
-        "tabWidth": 2,
-        "useTabs": false,
-        "endOfLine": "auto"
-      }
     ]
   }
 }

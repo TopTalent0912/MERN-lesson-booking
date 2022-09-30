@@ -146,7 +146,9 @@ const Customization = () => {
                       label="Roboto"
                       sx={{
                         '& .MuiSvgIcon-root': { fontSize: 28 },
-                        '& .MuiFormControlLabel-label': { color: theme.palette.grey[900] }
+                        '& .MuiFormControlLabel-label': {
+                          color: theme.palette.grey[900]
+                        }
                       }}
                     />
                     <FormControlLabel
@@ -155,7 +157,9 @@ const Customization = () => {
                       label="Poppins"
                       sx={{
                         '& .MuiSvgIcon-root': { fontSize: 28 },
-                        '& .MuiFormControlLabel-label': { color: theme.palette.grey[900] }
+                        '& .MuiFormControlLabel-label': {
+                          color: theme.palette.grey[900]
+                        }
                       }}
                     />
                     <FormControlLabel
@@ -164,7 +168,9 @@ const Customization = () => {
                       label="Inter"
                       sx={{
                         '& .MuiSvgIcon-root': { fontSize: 28 },
-                        '& .MuiFormControlLabel-label': { color: theme.palette.grey[900] }
+                        '& .MuiFormControlLabel-label': {
+                          color: theme.palette.grey[900]
+                        }
                       }}
                     />
                   </RadioGroup>
@@ -174,7 +180,14 @@ const Customization = () => {
             <Grid item xs={12}>
               {/* border radius */}
               <SubCard title="Border Radius">
-                <Grid item xs={12} container spacing={2} alignItems="center" sx={{ mt: 2.5 }}>
+                <Grid
+                  item
+                  xs={12}
+                  container
+                  spacing={2}
+                  alignItems="center"
+                  sx={{ mt: 2.5 }}
+                >
                   <Grid item>
                     <Typography variant="h6" color="secondary">
                       4px

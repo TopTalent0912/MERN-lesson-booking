@@ -9,17 +9,21 @@ const PageTitle = (props) => {
   return (
     <Grid
       item
-      xs={10}
-      sm={6}
-      md={6}
       justifyContent="center"
       container
       direction="row"
       alignItems="center"
-      sx={{ borderBottom: `5px solid ${theme.palette.primary.main}`, width: '100%', margin: 'auto' }}
+      sx={{
+        borderBottom: `5px solid ${theme.palette.primary.main}`,
+        width: 'fit-content',
+        margin: 'auto',
+        padding: 2
+      }}
     >
       <TitleIcon stroke={2} size="2.5rem" />
-      <Typography variant="h1">{title}</Typography>
+      <Typography variant="h1" sx={{ pl: 1 }}>
+        {title}
+      </Typography>
     </Grid>
   );
 };

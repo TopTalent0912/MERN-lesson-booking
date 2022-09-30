@@ -90,7 +90,9 @@ const NotificationList = () => {
         </ListItem>
         <Grid container direction="column" className="list-container">
           <Grid item xs={12} sx={{ pb: 2 }}>
-            <Typography variant="subtitle2">It is a long established fact that a reader will be distracted</Typography>
+            <Typography variant="subtitle2">
+              It is a long established fact that a reader will be distracted
+            </Typography>
           </Grid>
           <Grid item xs={12}>
             <Grid container>
@@ -119,7 +121,13 @@ const NotificationList = () => {
               <IconBuildingStore stroke={1.5} size="1.3rem" />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary={<Typography variant="subtitle1">Store Verification Done</Typography>} />
+          <ListItemText
+            primary={
+              <Typography variant="subtitle1">
+                Store Verification Done
+              </Typography>
+            }
+          />
           <ListItemSecondaryAction>
             <Grid container justifyContent="flex-end">
               <Grid item xs={12}>
@@ -132,7 +140,9 @@ const NotificationList = () => {
         </ListItem>
         <Grid container direction="column" className="list-container">
           <Grid item xs={12} sx={{ pb: 2 }}>
-            <Typography variant="subtitle2">We have successfully received your request.</Typography>
+            <Typography variant="subtitle2">
+              We have successfully received your request.
+            </Typography>
           </Grid>
           <Grid item xs={12}>
             <Grid container>

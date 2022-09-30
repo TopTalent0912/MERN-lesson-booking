@@ -114,7 +114,13 @@ const ProfileSection = () => {
             color="inherit"
           />
         }
-        label={<IconSettings stroke={1.5} size="1.5rem" color={theme.palette.primary.main} />}
+        label={
+          <IconSettings
+            stroke={1.5}
+            size="1.5rem"
+            color={theme.palette.primary.main}
+          />
+        }
         variant="outlined"
         ref={anchorRef}
         aria-controls={open ? 'menu-list-grow' : undefined}
@@ -144,21 +150,39 @@ const ProfileSection = () => {
           <Transitions in={open} {...TransitionProps}>
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
-                <MainCard border={false} elevation={16} content={false} boxShadow shadow={theme.shadows[16]}>
+                <MainCard
+                  border={false}
+                  elevation={16}
+                  content={false}
+                  boxShadow
+                  shadow={theme.shadows[16]}
+                >
                   <Box sx={{ p: 2 }}>
                     <Stack>
                       <Stack direction="row" spacing={0.5} alignItems="center">
                         <Typography variant="h4">Hi, </Typography>
-                        <Typography component="span" variant="h4" sx={{ fontWeight: 400 }}>
+                        <Typography
+                          component="span"
+                          variant="h4"
+                          sx={{ fontWeight: 400 }}
+                        >
                           {/* TODO:user name */}John Doe
                         </Typography>
                       </Stack>
-                      <Typography variant="subtitle2">{/* TODO:user role */} student</Typography>
+                      <Typography variant="subtitle2">
+                        {/* TODO:user role */} student
+                      </Typography>
                     </Stack>
 
                     <Divider />
                   </Box>
-                  <PerfectScrollbar style={{ height: '100%', maxHeight: 'calc(100vh - 250px)', overflowX: 'hidden' }}>
+                  <PerfectScrollbar
+                    style={{
+                      height: '100%',
+                      maxHeight: 'calc(100vh - 250px)',
+                      overflowX: 'hidden'
+                    }}
+                  >
                     <Box sx={{ p: 2 }}>
                       <List
                         component="nav"
@@ -177,28 +201,56 @@ const ProfileSection = () => {
                         }}
                       >
                         <ListItemButton
-                          sx={{ borderRadius: `${customization.borderRadius}px` }}
+                          sx={{
+                            borderRadius: `${customization.borderRadius}px`
+                          }}
                           selected={selectedIndex === 0}
-                          onClick={(event) => handleListItemClick(event, 0, '/user/account-profile/profile1')}
+                          onClick={(event) =>
+                            handleListItemClick(
+                              event,
+                              0,
+                              '/user/account-profile/profile1'
+                            )
+                          }
                         >
                           <ListItemIcon>
                             <IconSettings stroke={1.5} size="1.3rem" />
                           </ListItemIcon>
-                          <ListItemText primary={<Typography variant="body2">Account Settings</Typography>} />
+                          <ListItemText
+                            primary={
+                              <Typography variant="body2">
+                                Account Settings
+                              </Typography>
+                            }
+                          />
                         </ListItemButton>
                         <ListItemButton
-                          sx={{ borderRadius: `${customization.borderRadius}px` }}
+                          sx={{
+                            borderRadius: `${customization.borderRadius}px`
+                          }}
                           selected={selectedIndex === 1}
-                          onClick={(event) => handleListItemClick(event, 1, '/user/social-profile/posts')}
+                          onClick={(event) =>
+                            handleListItemClick(
+                              event,
+                              1,
+                              '/user/social-profile/posts'
+                            )
+                          }
                         >
                           <ListItemIcon>
                             <IconUser stroke={1.5} size="1.3rem" />
                           </ListItemIcon>
                           <ListItemText
                             primary={
-                              <Grid container spacing={1} justifyContent="space-between">
+                              <Grid
+                                container
+                                spacing={1}
+                                justifyContent="space-between"
+                              >
                                 <Grid item>
-                                  <Typography variant="body2">Social Profile</Typography>
+                                  <Typography variant="body2">
+                                    Social Profile
+                                  </Typography>
                                 </Grid>
                                 <Grid item>
                                   <Chip
@@ -215,14 +267,20 @@ const ProfileSection = () => {
                           />
                         </ListItemButton>
                         <ListItemButton
-                          sx={{ borderRadius: `${customization.borderRadius}px` }}
+                          sx={{
+                            borderRadius: `${customization.borderRadius}px`
+                          }}
                           selected={selectedIndex === 4}
                           onClick={handleLogout}
                         >
                           <ListItemIcon>
                             <IconLogout stroke={1.5} size="1.3rem" />
                           </ListItemIcon>
-                          <ListItemText primary={<Typography variant="body2">Logout</Typography>} />
+                          <ListItemText
+                            primary={
+                              <Typography variant="body2">Logout</Typography>
+                            }
+                          />
                         </ListItemButton>
                       </List>
                     </Box>

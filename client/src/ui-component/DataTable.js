@@ -13,7 +13,7 @@ import { useState } from 'react';
 const DataTable = (props) => {
   const { columns, rows } = props;
   const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [rowsPerPage, setRowsPerPage] = useState(3);
 
   const handleChangePage = (e, newPage) => {
     setPage(newPage);

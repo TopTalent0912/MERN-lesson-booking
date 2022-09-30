@@ -115,16 +115,33 @@ const NotificationSection = () => {
         }}
       >
         {({ TransitionProps }) => (
-          <Transitions position={matchesXs ? 'top' : 'top-right'} in={open} {...TransitionProps}>
+          <Transitions
+            position={matchesXs ? 'top' : 'top-right'}
+            in={open}
+            {...TransitionProps}
+          >
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
-                <MainCard border={false} elevation={16} content={false} boxShadow shadow={theme.shadows[16]}>
+                <MainCard
+                  border={false}
+                  elevation={16}
+                  content={false}
+                  boxShadow
+                  shadow={theme.shadows[16]}
+                >
                   <Grid container direction="column" spacing={2}>
                     <Grid item xs={12}>
-                      <Grid container alignItems="center" justifyContent="space-between" sx={{ pt: 2, px: 2 }}>
+                      <Grid
+                        container
+                        alignItems="center"
+                        justifyContent="space-between"
+                        sx={{ pt: 2, px: 2 }}
+                      >
                         <Grid item>
                           <Stack direction="row" spacing={2}>
-                            <Typography variant="subtitle1">All Notification</Typography>
+                            <Typography variant="subtitle1">
+                              All Notification
+                            </Typography>
                             <Chip
                               size="small"
                               label="01"
@@ -138,7 +155,13 @@ const NotificationSection = () => {
                       </Grid>
                     </Grid>
                     <Grid item xs={12}>
-                      <PerfectScrollbar style={{ height: '100%', maxHeight: 'calc(100vh - 205px)', overflowX: 'hidden' }}>
+                      <PerfectScrollbar
+                        style={{
+                          height: '100%',
+                          maxHeight: 'calc(100vh - 205px)',
+                          overflowX: 'hidden'
+                        }}
+                      >
                         <Grid container direction="column" spacing={2}>
                           <Grid item xs={12} p={0}>
                             <Divider sx={{ my: 0 }} />

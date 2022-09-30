@@ -79,21 +79,21 @@ const Dashboard = () => {
     <Grid container spacing={2}>
       <PageTitle title="Dashboard" icon={IconDashboard} />
       <Grid container spacing={2} justifyContent="center" sx={{ my: 3 }}>
-        <Grid item xs={10}>
+        <Grid item xs={11}>
           <MainCard title="My Schedule">
             <ScheduleCalendar eventsList={events} sx={{ width: '100%' }} />
           </MainCard>
         </Grid>
       </Grid>
       <Grid container spacing={2} justifyContent="center" sx={{ my: 3 }}>
-        <Grid item xs={10}>
+        <Grid item xs={11}>
           <MainCard title="Upcoming Classes">
             <DataTable columns={columns} rows={rows} />
           </MainCard>
         </Grid>
       </Grid>
       <Grid container spacing={2} justifyContent="center" sx={{ my: 3 }}>
-        <Grid item xs={10}>
+        <Grid item xs={11}>
           <MainCard title="Recent Activity">
             <DataTable columns={columns} rows={rows} />
           </MainCard>
