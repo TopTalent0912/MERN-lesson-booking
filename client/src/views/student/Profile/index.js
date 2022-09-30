@@ -192,7 +192,9 @@ const Dashboard = () => {
                       inputFormat="MM/DD/YYYY"
                       value={new Date('2022', '04', '12')}
                       onChange={handleDateChange}
-                      renderInput={(params) => <TextField {...params} />}
+                      renderInput={(params) => (
+                        <TextField {...params} sx={{ width: '80%' }} />
+                      )}
                     />
                   </LocalizationProvider>
                 </Box>

@@ -6,7 +6,8 @@ import {
   IconCalendarEvent,
   IconAlertTriangle,
   IconSubscript,
-  IconHelp
+  IconHelp,
+  IconScript
 } from '@tabler/icons';
 
 // ==============================|| MENU ITEMS ||============================== //
@@ -64,7 +65,7 @@ const studentMenuItems = {
           title: 'Book Class',
           type: 'item',
           url: '/student/booking',
-          icon: IconUserCircle,
+          icon: IconScript,
           breadcrumbs: false
         }
       ]

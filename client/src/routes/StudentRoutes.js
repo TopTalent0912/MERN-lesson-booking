@@ -8,6 +8,7 @@ import Loadable from 'ui-component/Loadable';
 const StudentDashboard = Loadable(lazy(() => import('views/student/Dashbord')));
 const StudentProfile = Loadable(lazy(() => import('views/student/Profile')));
 const StudentSchedule = Loadable(lazy(() => import('views/student/Schedule')));
+const StudentBooking = Loadable(lazy(() => import('views/student/Booking')));
 // const SamplePage = Loadable(lazy(() => import('views/sample-page')));
 
 // ==============================|| MAIN ROUTING ||============================== //
@@ -27,6 +28,10 @@ const StudentRoutes = {
     {
       path: '/student/schedule',
       element: <StudentSchedule />
+    },
+    {
+      path: '/student/booking',
+      element: <StudentBooking />
     }
   ]
 };
